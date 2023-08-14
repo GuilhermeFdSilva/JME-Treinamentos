@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Appalcoolgasolina" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/darkBlue</item>
+        <item name="colorAccent">@color/accentBlue</item>
+    </style>
+    <style name="Theme.Appalcoolgasolina" parent="Base.Theme.Appalcoolgasolina" />
+</resources>
