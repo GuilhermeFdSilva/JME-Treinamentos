@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.SeekBar;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -23,7 +24,7 @@ import com.google.android.material.textfield.TextInputEditText;
 public class MainActivity extends AppCompatActivity {
     private EditText campoNome;
     private TextInputEditText campoEmail;
-    private TextView resultado, resultadoSexo, resultadoSwitch, resultadoToggle;
+    private TextView resultado, resultadoSexo, resultadoSwitch, resultadoToggle, resultadoSeekbar ;
 
     // CheckBox
     private CheckBox checkVermelho, checkAmarelo, checkAzul;
@@ -40,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
     private ProgressBar progressBarHorizont, progressBarCirc;
     private int progresso = 0;
 
+    //Seekbar
+    private SeekBar seekBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         resultadoSexo = findViewById(R.id.resultadoSexo);
         resultadoSwitch = findViewById(R.id.resultadoSwitch);
         resultadoToggle = findViewById(R.id.resultadoToggle);
+        resultadoSeekbar = findViewById(R.id.resultadoSeekbar);
 
         campoNome = findViewById(R.id.editNome);
         campoEmail = findViewById(R.id.editEmail);
@@ -72,10 +77,31 @@ public class MainActivity extends AppCompatActivity {
         // ProgressBar
         progressBarHorizont = findViewById(R.id.progressBarHorizont);
         progressBarCirc = findViewById(R.id.progressBarCirc);
+        progressBarCirc.setVisibility(View.GONE);
+
+        //Seekbar
+        seekBar = findViewById(R.id.seekBar);
 
         radioButtonListener();
         switchListener();
         toggleListener();
+
+        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                resultadoSeekbar.setText(i + " / " + seekBar.getMax());
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
     }
 
     public String checkBox() {
@@ -213,6 +239,14 @@ public class MainActivity extends AppCompatActivity {
         // ProgressBar horizontal
         this.progresso++;
         progressBarHorizont.setProgress(progresso);
+        progressBarCirc.setVisibility(View.VISIBLE);
+
+        if (progresso >= 10) {
+            progressBarCirc.setVisibility(View.GONE);
+        }
     }
 
+    public void recuperarProgrsso(View view) {
+        resultadoSeekbar.setText("Escolhido: " + seekBar.getProgress());
+    }
 }
