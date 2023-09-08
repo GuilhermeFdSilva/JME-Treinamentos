@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AppCaraOuCoroa" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/darkGreen</item>
+        <item name="android:colorBackground">@color/green</item>
+    </style>
+
+    <style name="Theme.AppCaraOuCoroa" parent="Base.Theme.AppCaraOuCoroa" />
+</resources>
