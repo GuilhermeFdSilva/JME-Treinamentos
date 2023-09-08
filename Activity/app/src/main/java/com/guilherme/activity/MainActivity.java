@@ -12,7 +12,7 @@ import com.google.android.material.textfield.TextInputEditText;
 public class MainActivity extends AppCompatActivity {
 
     private Button button;
-    private TextInputEditText nome, idade;
+    private TextInputEditText nome, email, idade;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,14 +21,20 @@ public class MainActivity extends AppCompatActivity {
 
         this.button = findViewById(R.id.buttonEnviar);
         this.nome = findViewById(R.id.inputNome);
+        this.email = findViewById(R.id.inputEmail);
         this.idade = findViewById(R.id.inputIdade);
 
         this.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), SegundaActivity.class);
-                intent.putExtra("nome", nome.getText().toString());
-                intent.putExtra("idade", idade.getText().toString());
+
+                Usuario usuario = new Usuario(nome.getText().toString(),
+                        email.getText().toString(),
+                        Integer.parseInt(idade.getText().toString()));
+
+                intent.putExtra("objeto", usuario);
+
                 startActivity(intent);
             }
         });
