@@ -2,52 +2,35 @@ package com.guilherme.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Toast;
+import android.view.View;
+import android.widget.Button;
+
+import com.google.android.material.textfield.TextInputEditText;
 
 public class MainActivity extends AppCompatActivity {
+
+    private Button button;
+    private TextInputEditText nome, idade;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toast.makeText(this, "OnCreate", Toast.LENGTH_SHORT).show();
-    }
+        this.button = findViewById(R.id.buttonEnviar);
+        this.nome = findViewById(R.id.inputNome);
+        this.idade = findViewById(R.id.inputIdade);
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        Toast.makeText(this, "OnStart", Toast.LENGTH_SHORT).show();
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Toast.makeText(this, "OnResume", Toast.LENGTH_SHORT).show();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        Toast.makeText(this, "OnPause", Toast.LENGTH_SHORT).show();
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        Toast.makeText(this, "OnStop", Toast.LENGTH_SHORT).show();
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-        Toast.makeText(this, "OnRestart", Toast.LENGTH_SHORT).show();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Toast.makeText(this, "OnDestroy", Toast.LENGTH_SHORT).show();
+        this.button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), SegundaActivity.class);
+                intent.putExtra("nome", nome.getText().toString());
+                intent.putExtra("idade", idade.getText().toString());
+                startActivity(intent);
+            }
+        });
     }
 }
