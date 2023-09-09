@@ -1,0 +1,9 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FBAFloatingActionButton" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@android:color/holo_green_light</item>
+        <item name="colorPrimaryDark">@android:color/holo_green_dark</item>
+    </style>
+
+    <style name="Theme.FBAFloatingActionButton" parent="Base.Theme.FBAFloatingActionButton" />
+</resources>
