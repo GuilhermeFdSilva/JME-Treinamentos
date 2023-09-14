@@ -8,18 +8,24 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.guilherme.navigationdrawer.ui.home.HomeFragment"
-        android:label="Camera"
+        android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_gallery"
         android:name="com.guilherme.navigationdrawer.ui.gallery.GalleryFragment"
-        android:label="Galeria"
+        android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.guilherme.navigationdrawer.ui.slideshow.SlideshowFragment"
-        android:label="Apresentação"
+        android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_contato"
+        android:name="com.guilherme.navigationdrawer.ui.contato.ContatoFragment"
+        android:label="@string/menu_email"
+        tools:layout="@layout/fragment_contato" />
 </navigation>
