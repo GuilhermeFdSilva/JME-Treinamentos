@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">ATM Consultoria</string>
+    <string name="nav_header_title">ATM Consultoria</string>
+    <string name="nav_header_subtitle">atendimento@atmconsultoria.com.br</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Principal</string>
+    <string name="menu_servicos">Serviços</string>
+    <string name="menu_clientes">Clientes</string>
+    <string name="menu_contato">Contato</string>
+    <string name="menu_sobre">Sobre</string>
+
+    <!-- Serviços -->
+    <string name="titulo_1_servicos">Sistema de gestão de qualidade</string>
+    <string name="titulo_2_servicos">Indicadores de desempenho</string>
+
+    <!-- Clientes -->
+    <string name="titulo_clientes">Clientes</string>
+    <string name="texto_clientes">
+        Em mais de 15 anos de existência a ATM acumula experiência em serviços de consultoria para
+        empresas nacionais e multinacionais de diversos portes, tendo atendido mais de 1000 empresas
+        desde sua abertura.
+    </string>
+    <string name="cliente_1">Cielo</string>
+    <string name="cliente_2">Braskem</string>
+    <string name="cliente_3">Gerdau</string>
+    <string name="cliente_4">Embraer</string>
+    <string name="cliente_5">Natura</string>
+    <string name="cliente_6">Lojas Americanas</string>
+
+    <string name="texto_padrao">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis nisl quis leo fringilla tincidunt.
+        Mauris vitae lacus at massa sagittis ullamcorper. Quisque id nunc et eros consequat interdum.
+        Fusce auctor, lorem quis tristique lacinia, nisi augue aliquet leo, sit amet blandit nisl erat vitae justo.
+        Nulla facilisi. Vivamus euismod, urna sed ultrices aliquam, quam nisi consequat sapien,
+        ac sagittis arcu lorem ac magna. Morbi ut semper lectus.
+    </string>
+
+    <string name="hello_blank_fragment">Batata</string>
+</resources>
