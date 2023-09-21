@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Media Player</string>
+
+    <string name="playButton">Play</string>
+    <string name="pauseButton">Pause</string>
+    <string name="stopButton">Stop</string>
+    <string name="volume">Volume</string>
+
+    <string name="imagemMusica">Imagem da Música</string>
+    <string name="nomeMusica">Children Of The Sky</string>
+    <string name="artistaMusica">Imagine Dragons</string>
+</resources>
