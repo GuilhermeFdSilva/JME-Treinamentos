@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Rick and Morty</string>
+
+    <string name="play">Play</string>
+    <string name="star">Estrela</string>
+
+    <string name="descricao">2018 - 1 Temporada</string>
+    <string name="sinopse">
+        Rick Sanchez é um cientista genial, mas também um alcoólatra,
+        egoísta e irresponsável. Ele vive com sua filha Beth, seu genro Jerry e seus netos
+        Summer e Morty. Ele usa sua arma de portal para viajar por diferentes dimensões e planetas,
+        muitas vezes arrastando Morty com ele. Ele é considerado o homem mais inteligente do
+        universo, mas também o mais perigoso.
+    </string>
+</resources>
