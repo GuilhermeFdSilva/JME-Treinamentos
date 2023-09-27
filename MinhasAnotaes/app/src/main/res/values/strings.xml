@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Minhas Anotações</string>
+
+    <string name="logo">Minhas anotações</string>
+    <string name="salvar">Salvar</string>
+    <string name="anotacao">Digite sua anotação</string>
+</resources>
