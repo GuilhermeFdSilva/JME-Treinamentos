@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    tools:context=".fragments.BichosFragment">
+
+    <ImageView
+        android:id="@+id/imageDog"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/dog"
+        android:src="@drawable/bicho_cao"
+        app:layout_constraintBottom_toTopOf="@+id/imageLion"
+        app:layout_constraintEnd_toStartOf="@+id/imageCat"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageCat"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/cat"
+        android:src="@drawable/bicho_gato"
+        app:layout_constraintBottom_toTopOf="@+id/imageMonkey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageDog"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageLion"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/lion"
+        android:src="@drawable/bicho_leao"
+        app:layout_constraintBottom_toTopOf="@+id/imageSheep"
+        app:layout_constraintEnd_toStartOf="@+id/imageMonkey"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageDog" />
+
+    <ImageView
+        android:id="@+id/imageMonkey"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/monkey"
+        android:src="@drawable/bicho_macaco"
+        app:layout_constraintBottom_toTopOf="@+id/imageCow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageLion"
+        app:layout_constraintTop_toBottomOf="@+id/imageCat" />
+
+    <ImageView
+        android:id="@+id/imageSheep"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/sheep"
+        android:src="@drawable/bicho_ovelha"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageCow"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageLion" />
+
+    <ImageView
+        android:id="@+id/imageCow"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/cow"
+        android:src="@drawable/bicho_vaca"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageSheep"
+        app:layout_constraintTop_toBottomOf="@+id/imageMonkey" />
+
+    <ImageView
+        android:id="@+id/imageDireitos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/direitos"
+        android:src="@drawable/direitos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
