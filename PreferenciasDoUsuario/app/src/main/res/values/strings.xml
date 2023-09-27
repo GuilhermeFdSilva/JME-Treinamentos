@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Preferencias do Usuario</string>
+    
+    <string name="pergunta">Qual seu nome?</string>
+    <string name="input">Digite seu nome</string>
+    <string name="button">Salvar</string>
+    <string name="usuario_nao_definido">Olá, usuário não definido</string>
+</resources>
