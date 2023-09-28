@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Banco de dados SQLite</string>
+
+    <string name="todos">Todos os registros</string>
+    <string name="maiores">Maiores de idade</string>
+</resources>
