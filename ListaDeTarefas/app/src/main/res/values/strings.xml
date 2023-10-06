@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lista de Tarefas</string>
+    <string name="novaTarefa">Digite uma tarefa</string>
+
+    <string name="salvar">Salvar</string>
+    <string name="tarefas_vazio">Nenhuma tarefa</string>
+</resources>
